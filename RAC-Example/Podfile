@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, "6.0"
+
+target "RAC-Example" do
+    pod 'ReactiveCocoa'
+    target "RAC-ExampleTests", :exclusive => true do
+        pod 'OCHamcrest'
+        pod 'OCMockito'
+    end
+end
+
