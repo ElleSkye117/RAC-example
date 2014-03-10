@@ -21,6 +21,8 @@
 		590B584018CD38BD0014D4F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 590B583E18CD38BD0014D4F2 /* InfoPlist.strings */; };
 		590B584218CD38BD0014D4F2 /* RAC_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 590B584118CD38BD0014D4F2 /* RAC_ExampleTests.m */; };
 		598DE99318CD496A006D7083 /* MainView~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 598DE99218CD496A006D7083 /* MainView~iphone.xib */; };
+		598DE99818CD4F0E006D7083 /* DisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 598DE99718CD4F0E006D7083 /* DisplayItem.m */; };
+		598DE99B18CD4F1F006D7083 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 598DE99A18CD4F1F006D7083 /* MainViewModel.m */; };
 		60B18D3EA988465290A455B0 /* libPods-RAC-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0323AD90961E4076B1FBB270 /* libPods-RAC-Example.a */; };
 		89DDD08905EE4113A532AB54 /* libPods-RAC-ExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C9C2160CC6E4822830A5331 /* libPods-RAC-ExampleTests.a */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,10 @@
 		590B583F18CD38BD0014D4F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		590B584118CD38BD0014D4F2 /* RAC_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_ExampleTests.m; sourceTree = "<group>"; };
 		598DE99218CD496A006D7083 /* MainView~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainView~iphone.xib"; sourceTree = "<group>"; };
+		598DE99618CD4F0E006D7083 /* DisplayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayItem.h; sourceTree = "<group>"; };
+		598DE99718CD4F0E006D7083 /* DisplayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayItem.m; sourceTree = "<group>"; };
+		598DE99918CD4F1F006D7083 /* MainViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
+		598DE99A18CD4F1F006D7083 /* MainViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
 		5C50C218888242BAB37813FA /* Pods-RAC-Example.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC-Example.xcconfig"; path = "Pods/Pods-RAC-Example.xcconfig"; sourceTree = "<group>"; };
 		8038B3DDF5A049B1998D2F69 /* Pods-RAC-ExampleTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC-ExampleTests.xcconfig"; path = "Pods/Pods-RAC-ExampleTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +130,8 @@
 		590B581918CD38BD0014D4F2 /* RAC-Example */ = {
 			isa = PBXGroup;
 			children = (
+				598DE99518CD4ED7006D7083 /* ViewModel */,
+				598DE99418CD4ECD006D7083 /* Model */,
 				598DE99118CD493D006D7083 /* View */,
 				590B582218CD38BD0014D4F2 /* AppDelegate.h */,
 				590B582318CD38BD0014D4F2 /* AppDelegate.m */,
@@ -170,6 +178,24 @@
 				598DE99218CD496A006D7083 /* MainView~iphone.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		598DE99418CD4ECD006D7083 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				598DE99618CD4F0E006D7083 /* DisplayItem.h */,
+				598DE99718CD4F0E006D7083 /* DisplayItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		598DE99518CD4ED7006D7083 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				598DE99918CD4F1F006D7083 /* MainViewModel.h */,
+				598DE99A18CD4F1F006D7083 /* MainViewModel.m */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +363,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				590B582D18CD38BD0014D4F2 /* MainViewController.m in Sources */,
+				598DE99818CD4F0E006D7083 /* DisplayItem.m in Sources */,
 				590B582418CD38BD0014D4F2 /* AppDelegate.m in Sources */,
+				598DE99B18CD4F1F006D7083 /* MainViewModel.m in Sources */,
 				590B582018CD38BD0014D4F2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
